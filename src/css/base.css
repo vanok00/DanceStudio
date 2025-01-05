@@ -1,0 +1,64 @@
+body {
+  font-family: 'Inter Tight', sans-serif;
+  background: #1c1d20;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.scroll-up-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 52px;
+  min-height: 52px;
+  border-radius: 50%;
+  border: 1px solid #ed3b44;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.scroll-up-btn:hover {
+  background-color: #ed3b44;
+}
+.scroll-icon {
+  fill: #ed3b44;
+  width: 24px;
+  height: 24px;
+  transform: rotate(-90deg);
+}
+.scroll-up-btn:hover > .scroll-icon {
+  fill: #fafafa;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 15px;
+    max-width: 734px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 0 15px;
+    max-width: 1406px;
+  }
+}
